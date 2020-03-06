@@ -1,2 +1,2 @@
 # thescrayx.github.io
-kişisel site
+sasitxpack
