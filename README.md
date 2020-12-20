@@ -1,2 +1,2 @@
 # thescrayx.github.io
-sasitxpack
+epik bir discord yönlendirme linki
