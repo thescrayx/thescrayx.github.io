@@ -1,203 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Agengos Türkei </title>
-<link rel="icon" href="icon.ico" />
-  
-<meta content="Agengos Turkei" property="og:title">
-<meta content="SjScanner download Website" property="og:description">
-<meta content="among.png" property="og:image">
-<meta content="#43B581" data-react-helmet="true" name="theme-color">
-  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>( ͡° ͜ʖ ͡°) 12 Nisan</title>
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-.brh {
-  position: fixed;
-  width: 100%;
-  padding: 250px;
-}
-
-.indr {
-  position: fixed;
-  width: 100%;
-}
-
-.link {
-  position: fixed;
-  width: 100%;
-  padding: 90px;
-}
-
-.linkler {
-  position: fixed;
-  color: #f1f1f1;
-  width: 100%;
-  padding: 190px;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-</style>
+  <link rel="stylesheet" href="main.css" />
 </head>
-<body>
+<body style ="background-color:black;">
+  <header>
+    <div class="content">
+      <h1>12 <span>NİSAN </span>'A</h1>
+      <h2>KALAN</h2>
+      <div class="countdown">Çağan Owowo</div>
+	  <div class="akilsagligi">Akıl Sağlığını Kaybet.</div>
+    </div>
+  </header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
-<h2>Modal Example</h2>
+<script src="humanize-duration.js"></script>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+  <script>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Discord adresine yönlendirildi...</p>
-  </div>
+const turkishHumanizer = humanizeDuration.humanizer({
+  language: "tr",
+  units: ["y", "mo", "d", "h", "m", "s"],
+});
 
-</div>
+var onikinisan = '2021/04/12'
+var d1 = new Date(onikinisan);
 
-<video autoplay muted loop id="myVideo">
-  <source src="arka.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+const gerisayım = setInterval (()=>{
 
-<div class="brh">
-<center><img src="among.png" alt="Among Us Tr Logo"></center>
-</div>
+var d2 = turkishHumanizer(d1 - Date.now(), { maxDecimalPoints: 0 })
+document.querySelector('.countdown').innerText = d2;
 
-<div class="link">
-<center><img src="linkler.png" alt="Link tusu"></center>
-</div>
+},1000);
 
-<div class="linkler">
-<a href = "https://drive.google.com/file/d/13vDpvN36q4k5Sp_VN4_SmedHHZiWjyIQ/view?usp=sharing" target = "_blank"><p style="text-align:center;"><font size = "2">Google Drive</font></p></a>
-<a href = "https://s5.dosya.tc/server/57p1fy/SjScanner.rar.html" target = "_blank"><p style="text-align:center;"><font size = "2">Dosya Tc</font></p></a>
-<a href = "http://www.mediafire.com/file/az0lufnz7wztd2r/SjScanner.rar/file" target = "_blank"><p style="text-align:center;"><font size = "2">MediaFire</font></p></a>
-<a href = "https://disk.yandex.com.tr/d/iou8BusXL6Jj3g" target = "_blank"><p style="text-align:center;"><font size = "2">Yandex Disk</font></p></a>
-</div>
+const akılsaglıgınıkaybet = setInterval (()=>{
 
-<div class="indr">
-<a href = "https://drive.google.com/u/0/uc?export=download&confirm=cTQ8&id=13vDpvN36q4k5Sp_VN4_SmedHHZiWjyIQ" target = "_blank"><center><img src="indir.png" alt="Indir tusu" width="250" height="150"></center></a>
-</div>
 
-<div class="content">
-<p style="text-align:center;"><font size = "2">Emeği Geçenler</font></p>
-<p style="text-align:center;"><font size = "1">Çapo</font></p>
-<p style="text-align:center;"><font size = "1">Kawai Hentai Girl Demirkan</font></p>
-<p style="text-align:center;"><font size = "1">Travesti Bera</font></p></br>
-<p style="text-align:center;"><font size = "1">Agengos Türkei️®️ Pipimin tüm hakları saklıdır...</font></p>
-<a href="https://discord.gg/amongustr" target="_blank">
-<button id="myBtn">Discord Adresine Git !</button>
-</a>
-</div>
+var yuz =    "\n\n\n\n░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄\n    ░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄\n    ░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█\n    ░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░█\n    ░▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░█\n    █▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒█\n    █▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█\n    ░█▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█\n    ░░█░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█\n    ░░░█░░██░░▀█▄▄▄█▄▄█▄████░█\n    ░░░░█░░░▀▀▄░█░░░█░███████░█\n    ░░░░░▀▄░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█\n    ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░█\n    ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█\n    ░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░█\n"
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
+document.querySelector('.akilsagligi').innerText = yuz;
+	
+},1000);
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+console.log("Paskalya yumurtası bulamadın 😉. Ama ebenin amını buldun.")
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+  </script>
 
 </body>
 </html>
